@@ -2,32 +2,36 @@
 import random
 import json
 
-with open('stories.json', 'r', encoding='utf-8') as file:
-    stories = json.load(file)
 
-n = random.randint(0,7)
-story = stories[n]
-inputlist = story["inputs"]
-inputnumber = story["inputsnumber"]
+def main():
+    with open('stories.json', 'r', encoding='utf-8') as file:
+        stories = json.load(file)
 
-inputs = {}
+    n = random.randint(0,7)
+    story = stories[n]
+    inputlist = story["inputs"]
+    inputnumber = story["inputsnumber"]
 
-for i in range(inputnumber):
-    temp = input(f"Enter {inputlist[i]} : ")
-    inputs[inputlist[i]] = temp
- 
-text = story["story"]
+    inputs = {}
 
-text = text.format(**inputs)
+    for i in range(inputnumber):
+        temp = input(f"Enter {inputlist[i]} : ")
+        inputs[inputlist[i]] = temp
+    
+    text = story["story"]
 
-# old implmentation
-# for i in range(inputnumber):
-#     start = text.index(inputlist[i]) - 1
-#     end = start + len(inputlist[i]) + 1 
-#     text = text[:start ] + inputs[i] + text[end+1:]
+    text = text.format(**inputs)
 
-print()
-print("=========================MADLIB=========================")
-print()
-print(text)
+    # old implmentation
+    # for i in range(inputnumber):
+    #     start = text.index(inputlist[i]) - 1
+    #     end = start + len(inputlist[i]) + 1 
+    #     text = text[:start ] + inputs[i] + text[end+1:]
 
+    print()
+    print("=========================MADLIB=========================")
+    print()
+    print(text)
+
+if __name__ == "__main__":
+    main()

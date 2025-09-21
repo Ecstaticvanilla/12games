@@ -1,0 +1,50 @@
+[
+    {
+        "id": 0,
+        "story": "Today I went to my favorite Taco Stand called the {adjective} {animal}.\nUnlike most food stands, they cook and prepare the food in a {vehicle} while you {verb}.\nThe best thing on the menu is the {color} {noun}.\nInstead of ground beef they fill the taco with {foods1}, cheese, and top it off with a salsa made from {foods2}.\nIf that doesn't make your mouth water, then it's just like {person} always says: {saying}!",
+        "inputs": ["adjective","animal","vehicle","verb","color","noun","foods1","foods2","person","saying"],
+        "inputsnumber": 10
+    },
+    {
+        "id": 1,
+        "story": "Today a {occupation} came to our school to talk to us about her job. She said the most important skill you need to know to do her job is to be able to {verb1} around a {noun1}.\nShe said it was easy for her to learn her job because she loved to {verb2} when she was my age -- and that helps a lot!\nIf you're considering her profession, I hope you can be {adjective1} near a {noun2}.\nThat's very important! If you get too distracted in that situation you won't be able to {verb3} next to a {noun3}!",
+        "inputs": ["occupation","verb1","noun1","verb2","adjective1","noun2","verb3","noun3"],
+        "inputsnumber": 8
+    },
+    {
+        "id": 2,
+        "story": "“{animals1}, ” the photographer said as the camera flashed! {person1} and I had gone to {place1} to get our photos taken today.\nThe first photo we really wanted was a picture of us dressed as {things1} pretending to be a {profession}.\nWhen we saw the proofs of it, I was a bit {feeling} because it looked different than in my head. (I hadn't imagined so many {things2} behind us.)\nHowever, the second photo was exactly what I wanted. We both looked like wearing {pieceOfClothing} and {things3} -- exactly what I had in mind!",
+        "inputs": ["animals1","person1","place1","things1","profession","feeling","things2","pieceOfClothing","things3"],
+        "inputsnumber": 9
+    },
+    {
+        "id": 3,
+        "story": "I just got back from a pizza party with {things1}. Can you believe we got to eat pizza in {place1}?! Everyone got to choose their own toppings.\nI made '{food1} and {food2}' pizza, which is my favorite! They even stuffed the crust with {food3}.\nHow {adjective1}! If that wasn't good enough already, was there singing {songTitle}.\nI was so inspired by the music, I had to get up out of my seat and {verb1}.",
+        "inputs": ["things1","place1","food1","food2","food3","adjective1","songTitle","verb1"],
+        "inputsnumber": 8
+    },
+    {
+        "id": 4,
+        "story": "There once was a gingerbread man who had two {adjective1} for eyes and a {color1} for a nose.\nHe always said, ' {saying1} as fast as you can, you can't catch me I'm the gingerbread man.'\nOne day he ran past a {profession} , but they couldn't catch him. He kept running until he passed a {thing1}, but they couldn't catch him either.\nSuddenly, he came across a river near {place1}. How would he cross? Then he saw a {thing2} floating by. He jumped on it, but it was actually {celebrity} -- who just so happened to love cookies :)",
+        "inputs": ["adjective1","color1","saying1","profession","thing1","place1","thing2","celebrity"],
+        "inputsnumber": 8
+    },
+    {
+        "id": 5,
+        "story": "Hi my name is {name1}, but my friends call me {name2}.\nMy favorite color is the color of {foodOrSillyWord} and my favorite thing to do is {verb1}.\nMy parents were a {profession1} and {profession2}, which is why we lived in {place1}.\nYou probably know me from my TV commercial for {celebrity}.\nI'm the one who says, '{phraseLyricsSaying}' at the very end!",
+        "inputs": ["name1","name2","foodOrSillyWord","verb1","profession1","profession2","place1","celebrity","phraseLyricsSaying"],
+        "inputsnumber": 9
+    },
+    {
+        "id": 6,
+        "story": "Today I met the Queen of {place1} during a quick trip to {place2}.\nI had left the house because I really needed to pick up a dozen {thing1} in order to repair my {noun1}.\nI wasn't planning on meeting her or I probably wouldn't have worn my {clothing}.\nI know most people would have bowed, but I forgot and decided to instead.\nShe smiled politely and then said, '{phraseLyricsSaying}'.",
+        "inputs": ["place1","place2","thing1","noun1","clothing","phraseLyricsSaying"],
+        "inputsnumber": 6
+    },
+    {
+        "id": 7,
+        "story": "Last night I dreamed I was a butterfly with {things1} that looked like {color1}.\nI flew to {place1} with my best friend, {person1}, who was a {insect}.\nWe ate some {food1} when we got there and then decided to {verb1}.\nThe dream ended when I said, '{phraseLyricsSaying}'.",
+        "inputs": ["things1","color1","place1","person1","insect","food1","verb1","phraseLyricsSaying"],
+        "inputsnumber": 8
+    }
+]

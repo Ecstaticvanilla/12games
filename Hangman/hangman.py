@@ -13,11 +13,10 @@ def hangman():
     guessset = set([])
 
     lives = 9
-    correctletters = len(word)
+    correctletters = len(set(word))
 
     while(lives > 0):
         print(*guessset)
-        lives -= 1
         while True:
             choice = input("Enter your choice : ")
             if not choice.isalpha() or choice in guessset:
@@ -27,10 +26,14 @@ def hangman():
         guessset.add(choice)
         if choice in word:
             correctletters -= 1
+        else:
+            lives -= 1
         if correctletters == 0:
+            print(*word)
             print("YOU are correct !!! You won!! congrats")
-            break
-        print(*[i  if i in guessset else "_" for i in word])
+            return
+        print(f"Lives left {lives}")
+        print(*[i if i in guessset else "_" for i in word])
 
     print(f"You Lost the word was '{word}'")
 
